@@ -1,45 +1,141 @@
+/* CSS reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root{  
+
+ /* ### Primary */
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* ### Neutral */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+/* Start styling */
 body{
-    height: 100hv;
-    background-color: hsl(0, 0%, 98%);
+    background-color: var(--Very-Light-Gray);
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-h1{
+.Heading{
     font-weight: 200;
-    color: hsl(234, 12%, 34%);
-}
-
-h1 bold{
-    font-weight: 600;
-}
-
-p{
-    color:hsl(229, 6%, 66%);
+    color: var(--Very-Dark-Blue);
     text-align: center;
 }
 
-h3{
-    color: hsl(234, 12%, 34%);
+.Heading bold{
+    font-weight: 600;
+}
+
+.Paragraph{
+    color:var(--Grayish-Blue);
+    text-align: center;
+}
+
+.Card-title{
+    color: var(--Very-Dark-Blue);
     font-size: 16px;
 }
 
-.card-B{
+.card-discription{
     font-size: 12px;
     text-align: left;
 }
 
 .card-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center; 
 }
 
 .card{
-height: 170px;
-width: 250px;
+min-height: 170px;
+max-width: 250px;
 background-color: white;
 box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
 margin: 20px;
@@ -49,8 +145,8 @@ border-radius: 5px;
 }
 
 img{
-    width: 50px;
-    height: 50px;
+    /* width: 50px; */
+   max-height: 40px;
    position: absolute;
    bottom: 0;
    right: 0;
@@ -59,17 +155,27 @@ img{
 }
 
 .card1{
-    border-top: 4px solid hsl(180, 62%, 55%);
+    border-top: 4px solid var(--Cyan);
 }
 
 .card2{
-    border-top: 4px solid hsl(0, 78%, 62%);
+    border-top: 4px solid var(--Red);
 }
 
 .card3{
-    border-top: 4px solid hsl(34, 97%, 64%);
+    border-top: 4px solid var(--Orange);
 }
 
 .card4{
-    border-top: 4px solid hsl(212, 86%, 64%);
+    border-top: 4px solid var(--Blue);
+}
+
+
+@media (min-width:37.5rem){
+    .card-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center; 
+    }
 }
