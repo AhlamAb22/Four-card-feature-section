@@ -155,8 +155,8 @@ justify-content: center;
 
 img{
  position: absolute;
- bottom: 5px;
- right: 5px;
+ bottom: 30px;
+ right: 30px;
  max-height: 40px;
 }
 
@@ -189,7 +189,7 @@ img{
   }
   
   .card {
-   min-height: 200px;
+   min-height: 250px;
   }
   
   
