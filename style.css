@@ -206,5 +206,9 @@ img{
    min-height: 250px;
    max-width: 365px;
   }
+
+    .card_title{
+    font-size: .9rem;
+  }
   
 }
