@@ -114,6 +114,7 @@ background-color: var(--Very-Light-Gray);
 .heading{
 color: var(--Very-Dark-Blue);
 font-weight: var(--extra-light-font);
+font-size: 1.5rem;
 }
 
 .heading bold{
@@ -188,7 +189,7 @@ img{
  .intro{
     display: grid;
     gap: 1rem;
-    margin: 0px auto 65px;
+    margin: 5px auto 65px;
     max-width: 535px;
   }
   
