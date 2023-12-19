@@ -149,8 +149,7 @@ justify-content: center;
  box-shadow: 0 0px 10px 0px hsla(228, 40%, 42%, 0.25);
   max-width: 365px;
   position: relative;
-  /* display: grid;
-  gap: 1rem; */
+  background-color: white;
   padding: 35px;
   border-radius: 7px;
   text-align: left;
