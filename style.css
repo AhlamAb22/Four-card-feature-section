@@ -146,7 +146,6 @@ display: grid;
 gap: 2rem;
 align-items: center;
 justify-content: center;
-  margin-top:3px;
 }
 
 .center{
@@ -193,6 +192,7 @@ img{
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 5px;
   }
 
   .intro{
