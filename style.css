@@ -111,18 +111,26 @@ color: var(--Grayish-Blue);
 background-color: var(--Very-Light-Gray);
 }
 
+.intro{
+  max-width: 320px;
+  display: grid;
+  gap: 1rem;
+  margin: 0px auto 50px;
+}
+
 .heading{
 color: var(--Very-Dark-Blue);
 font-weight: var(--extra-light-font);
-font-size: 2.3rem;
+font-size: 1.5rem;
 }
 
 .heading bold{
  font-weight: var(--semi-bold-font);
 }
 
-/* .Paragraph{
-} */
+.Paragraph{
+  font-size: 1rem;
+}
 
 .Card-title{
   color: var(--Very-Dark-Blue);
@@ -146,20 +154,20 @@ justify-content: center;
 }
 
 .card{
- box-shadow: 0 0px 10px 0px hsla(228, 40%, 42%, 0.25);
-  max-width: 365px;
+  box-shadow: 0 0px 10px 0px hsla(228, 40%, 42%, 0.25);
   position: relative;
   background-color: white;
   padding: 35px;
   border-radius: 7px;
   text-align: left;
+  min-height: 230px;
 }
 
 img{
  position: absolute;
  bottom: 30px;
  right: 30px;
-   width: 64px;
+ width: 64px;
  height: 64px;
 }
 
@@ -186,16 +194,17 @@ img{
     grid-template-columns: repeat(3, 1fr);
   }
 
- .intro{
-    display: grid;
-    gap: 1rem;
-    margin: 5px auto 65px;
+  .intro{
     max-width: 535px;
+  }
+
+  .heading{
+    font-size: 2rem;
   }
   
   .card {
    min-height: 250px;
+   max-width: 365px;
   }
-  
   
 }
