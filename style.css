@@ -146,6 +146,7 @@ display: grid;
 gap: 2rem;
 align-items: center;
 justify-content: center;
+  margin-top:3px;
 }
 
 .center{
