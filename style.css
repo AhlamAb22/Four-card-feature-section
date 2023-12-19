@@ -108,6 +108,7 @@ margin: 20px;
 text-align: center;
 font-family: var(--body-font);
 color: var(--Grayish-Blue);
+background-color: var(--Very-Light-Gray);
 }
 
 .heading{
@@ -126,9 +127,9 @@ font-weight: var(--extra-light-font);
   color: var(--Very-Dark-Blue);
 }
 
-/* .card-discription{
- 
-} */
+.card-discription{
+ font-size: .9rem;
+}
 
 .card-container{
 display: grid;
