@@ -160,6 +160,8 @@ img{
  position: absolute;
  bottom: 30px;
  right: 30px;
+   width: 64px;
+ height: 64px;
 }
 
 .card1{
