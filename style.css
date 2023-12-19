@@ -146,7 +146,7 @@ justify-content: center;
 }
 
 .card{
-  box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 2px hsl(228, 45%, 44%, 25%);
   max-width: 365px;
   position: relative;
   /* display: grid;
