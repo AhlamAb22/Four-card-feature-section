@@ -183,7 +183,9 @@ img{
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .intro{
+ .intro{
+    display: grid;
+    gap: 1rem;
     margin: 20px auto 40px;
     max-width: 535px;
   }
