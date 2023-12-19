@@ -125,6 +125,7 @@ font-weight: var(--extra-light-font);
 
 .Card-title{
   color: var(--Very-Dark-Blue);
+  margin-bottom: 15px;
 }
 
 .card-discription{
@@ -187,7 +188,7 @@ img{
  .intro{
     display: grid;
     gap: 1rem;
-    margin: 20px auto 40px;
+    margin: 0px auto 40px;
     max-width: 535px;
   }
   
